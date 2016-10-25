@@ -2,6 +2,9 @@
 ;;; Code:
 ;;; Commentary:
 
+(setq js-indent-level 2)
+(setq js2-basic-offset 2)
+
 (add-hook 'js3-mode-hook
           (lambda ()
             (setq js3-auto-indent-p t
