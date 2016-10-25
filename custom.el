@@ -34,4 +34,7 @@
   (setq web-mode-code-indent-offset 2))
 (add-hook 'web-mode-hook  'my-web-mode-hook)
 
+(setq linum-format "%4d \u2502 ")
+(global-linum-mode 1)
+
 ;;; custom.el ends here
