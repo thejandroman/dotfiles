@@ -37,4 +37,6 @@
 (setq linum-format "%4d \u2502 ")
 (global-linum-mode 1)
 
+(require 'magit)
+
 ;;; custom.el ends here
