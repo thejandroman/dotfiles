@@ -39,4 +39,6 @@
 
 (require 'magit)
 
+(setq ruby-insert-encoding-magic-comment nil)
+
 ;;; custom.el ends here
