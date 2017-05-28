@@ -2,6 +2,9 @@
 ;;; Code:
 ;;; Commentary:
 
+;; Disable arrow keys
+(setq guru-warn-only nil)
+
 (require 'flycheck)
 
 ;; turn on flychecking globally
