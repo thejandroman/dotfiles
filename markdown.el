@@ -3,10 +3,9 @@
 ;;; Commentary:
 
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/personal/emacs-livedown"))
-(require 'livedown)
 
-(custom-set-variables
- '(livedown:autostart t)
- )
+(use-package livedown
+  :config
+  (setq livedown-autostart t))
 
-;;; livedown.el ends here
+;;; markdown.el ends here
