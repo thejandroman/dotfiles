@@ -2,9 +2,9 @@
 ;;; Code:
 ;;; Commentary:
 
-(if (eq system-type 'darwin)
-    (defun copy-from-osx ()
-      (shell-command-to-string "pbpaste"))
+(when (eq system-type 'darwin)
+  (defun copy-from-osx ()
+    (shell-command-to-string "pbpaste"))
 
   (defun paste-to-osx (text &optional push)
     (let ((process-connection-type nil))
