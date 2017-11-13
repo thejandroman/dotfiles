@@ -5,7 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (rbenv markdown-mode magit flycheck exec-path-from-shell use-package better-defaults))))
+    (whitespace-cleanup-mode smartparens web-mode js2-mode json-mode rbenv markdown-mode magit flycheck exec-path-from-shell use-package better-defaults))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

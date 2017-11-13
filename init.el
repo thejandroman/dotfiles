@@ -37,6 +37,7 @@
 (require 'theme)
 (require 'syntax-checking)
 (require 'vcs)
+(require 'programming)
 (require 'markdown)
 (require 'ruby)
 (require 'javascript)
