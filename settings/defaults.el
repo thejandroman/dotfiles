@@ -1,6 +1,11 @@
 (use-package better-defaults
   :ensure t)
 
+(use-package guru-mode
+  :ensure t
+  :config
+  (guru-global-mode +1))
+
 (setq linum-format "%4d \u2502 ")
 (global-linum-mode 1)
 
