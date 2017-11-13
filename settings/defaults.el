@@ -36,11 +36,20 @@
 ;; https://bling.github.io/blog/2016/01/18/why-are-you-changing-gc-cons-threshold/
 (defun my-minibuffer-setup-hook ()
   (setq gc-cons-threshold most-positive-fixnum))
-
 (defun my-minibuffer-exit-hook ()
   (setq gc-cons-threshold 800000))
-
 (add-hook 'minibuffer-setup-hook #'my-minibuffer-setup-hook)
 (add-hook 'minibuffer-exit-hook #'my-minibuffer-exit-hook)
 
+(defun smart-line-beginning ()
+  "Move point to the beginning of text on the current line; if that is already the current position of point, then move it to the beginning of the line."
+  (interactive)
+  (let ((pt (point)))
+    (beginning-of-line-text)
+    (when (eq pt (point))
+      (beginning-of-line))))
+(global-set-key (kbd "C-a") 'smart-line-beginning)
+
 (provide 'defaults)
+
+;;; defaults.el ends here
