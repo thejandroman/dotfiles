@@ -1,8 +1,10 @@
-;;; package --- Summary
+;;; vcs.el --- Summary
 ;;; Code:
 ;;; Commentary:
 
 (use-package magit
   :ensure t)
 
-;;; git.el ends here
+(provide 'vcs)
+
+;;; vcs.el ends here
