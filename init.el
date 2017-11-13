@@ -39,5 +39,6 @@
 (require 'vcs)
 (require 'markdown)
 (require 'ruby)
+(require 'javascript)
 
 ;;; init.el ends here
