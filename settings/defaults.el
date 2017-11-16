@@ -25,6 +25,10 @@
 ;; Remove text in active region if inserting text
 (delete-selection-mode 1)
 
+;; Always display line and column numbers
+(setq line-number-mode t)
+(setq column-number-mode t)
+
 ;; Lines should be 80 characters wide, not 72
 (setq fill-column 80)
 (set-default 'fill-column 80)
