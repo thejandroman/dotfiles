@@ -35,6 +35,7 @@
 
 ;; Add features
 (require 'theme)
+(require 'completions)
 (require 'syntax-checking)
 (require 'vcs)
 (require 'programming)
