@@ -24,6 +24,10 @@
   :config
   (setq ruby-insert-encoding-magic-comment nil))
 
+;; Disable reek
+(setq-default flycheck-disabled-checkers
+              (append flycheck-disabled-checkers
+                      '(ruby-reek)))
 (provide 'ruby)
 
 ;;; ruby.el ends here
