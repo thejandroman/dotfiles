@@ -5,7 +5,11 @@
 (use-package base16-theme
   :ensure t)
 
-(load-theme 'base16-ocean t)
+(use-package darktooth-theme
+  :ensure t)
+
+
+(load-theme 'darktooth t)
 
 (provide 'theme)
 
