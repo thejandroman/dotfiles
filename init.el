@@ -41,5 +41,6 @@
 (require 'markdown)
 (require 'ruby)
 (require 'javascript)
+(require 'yaml)
 
 ;;; init.el ends here
