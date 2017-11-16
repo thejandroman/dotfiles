@@ -25,7 +25,6 @@
   (setq web-mode-code-indent-offset 2))
 
 ;; Disable jshint. We use eslint.
-(defvar flycheck-disabled-checkers)
 (setq-default flycheck-disabled-checkers
               (append flycheck-disabled-checkers
                       '(javascript-jshint)))
