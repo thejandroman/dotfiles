@@ -1,4 +1,4 @@
-;;; package --- Summary
+;;; ruby.el --- Summary
 ;;; Code:
 ;;; Commentary:
 
@@ -21,6 +21,7 @@
   (global-rbenv-mode))
 
 (use-package ruby-mode
+  :ensure t
   :config
   (setq ruby-insert-encoding-magic-comment nil))
 
