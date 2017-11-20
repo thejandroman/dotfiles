@@ -43,5 +43,6 @@
 (require 'ruby)
 (require 'javascript)
 (require 'yaml)
+(require 'puppet)
 
 ;;; init.el ends here
