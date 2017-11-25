@@ -44,5 +44,6 @@
 (require 'javascript)
 (require 'yaml)
 (require 'puppet)
+(require 'spelling)
 
 ;;; init.el ends here
