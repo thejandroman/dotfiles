@@ -29,6 +29,10 @@
 (setq-default flycheck-disabled-checkers
               (append flycheck-disabled-checkers
                       '(ruby-reek)))
+
+(add-to-list 'interpreter-mode-alist
+             '("shell-ruby" . ruby-mode))
+
 (provide 'ruby)
 
 ;;; ruby.el ends here
