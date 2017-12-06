@@ -12,7 +12,7 @@
   :ensure t)
 
 (customize-set-variable 'solarized-termcolors 256)
-(customize-set-variable 'frame-background-mode (quote light))
+(customize-set-variable 'frame-background-mode (quote dark))
 (load-theme 'solarized t)
 
 
