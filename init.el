@@ -39,11 +39,13 @@
 (require 'syntax-checking)
 (require 'vcs)
 (require 'programming)
+(require 'spelling)
+
+;; Add languages
 (require 'markdown)
 (require 'ruby)
 (require 'javascript)
 (require 'yaml)
 (require 'puppet)
-(require 'spelling)
 
 ;;; init.el ends here
