@@ -20,3 +20,4 @@ brew bundle --file="~/.emacs.d/Brewfile"
 - [eslint](https://eslint.org/)
 - [livedown](https://github.com/shime/livedown)
 - [rbenv](https://github.com/rbenv/rbenv)
+- [standard](https://standardjs.com/)
