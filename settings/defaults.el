@@ -79,6 +79,9 @@ and file 'filename' will be opened and cursor set on line 'linenumber'"
                                      (string-to-number (or (match-string 3 name) ""))))
                             fn))) files)))
 
+;; Keybindings
+(global-set-key (kbd "C-x \\") 'align-regexp)
+
 (provide 'defaults)
 
 ;;; defaults.el ends here
