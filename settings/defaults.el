@@ -6,6 +6,8 @@
   :config
   (guru-global-mode +1))
 
+(setq inhibit-startup-screen t)
+
 (setq linum-format "%4d \u2502 ")
 (global-linum-mode 1)
 
