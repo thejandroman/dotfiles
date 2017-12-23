@@ -4,3 +4,6 @@ elpa
 ido.last
 network-security.data
 recentf
+eshell
+tramp
+custom.el
