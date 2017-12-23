@@ -88,8 +88,15 @@ and file 'filename' will be opened and cursor set on line 'linenumber'"
                                      (string-to-number (or (match-string 3 name) ""))))
                             fn))) files)))
 
+(use-package expand-region
+  :ensure t
+  :commands er/expand-region
+  :bind ("C-=" . er/expand-region))
+
 ;; Keybindings
 (global-set-key (kbd "C-x \\") 'align-regexp)
+(global-set-key (kbd "C-+") 'text-scale-increase)
+(global-set-key (kbd "C--") 'text-scale-decrease)
 
 (provide 'defaults)
 
