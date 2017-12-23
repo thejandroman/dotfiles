@@ -16,7 +16,11 @@
   (package-install 'use-package))
 (eval-when-compile
   (require 'use-package))
-(require 'diminish)
+
+(use-package diminish
+  :ensure t)
+
+;; (require 'diminish)
 (require 'bind-key)
 
 (provide 'setup-package)
