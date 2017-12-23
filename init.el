@@ -39,6 +39,7 @@
 (require 'syntax-checking)
 (require 'vcs)
 (require 'programming)
+(require 'tags)
 (require 'spelling)
 
 ;; Add languages
