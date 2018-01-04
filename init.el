@@ -40,6 +40,7 @@
 (require 'vcs)
 (require 'programming)
 (require 'tags)
+(require 'projects)
 (require 'spelling)
 
 ;; Add languages
