@@ -11,9 +11,12 @@
 (use-package color-theme-solarized
   :ensure t)
 
-(customize-set-variable 'solarized-termcolors 256)
-(customize-set-variable 'frame-background-mode (quote dark))
-(load-theme 'solarized t)
+(use-package zenburn-theme
+  :ensure t)
+
+;; (customize-set-variable 'solarized-termcolors 256)
+;; (customize-set-variable 'frame-background-mode (quote light))
+(load-theme 'zenburn t)
 
 
 (provide 'theme)
