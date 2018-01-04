@@ -12,7 +12,7 @@
   (defvar livedown-autostart)
   (setq livedown-autostart t))
 
-(defun-minor-mode livedown-mode
+(define-minor-mode livedown-mode
   "Override markdown mode to use livedown for preview"
   :lighter " livedown"
   :keymap (let ((map (make-sparse-keymap)))
