@@ -43,6 +43,18 @@
 (require 'projects)
 (require 'spelling)
 
+(defun new-frame-setup (frame)
+  (if (display-graphic-p frame)
+      (require 'spaceline-all-the-icons)))
+
+;; Run for already-existing frames
+(mapc 'new-frame-setup (frame-list))
+;; Run when a new frame is created
+(add-hook 'after-make-frame-functions 'new-frame-setup)
+
+;; (when (display-graphic-p)
+;;   (require 'spaceline-all-the-icons))
+
 ;; Add languages
 (require 'markdown)
 (require 'ruby)
