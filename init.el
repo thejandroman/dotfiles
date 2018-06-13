@@ -31,7 +31,7 @@
 
 ;; Add some mac defaults
 (when is-mac
-    (require 'mac-defaults))
+  (require 'mac-defaults))
 
 ;; Add features
 (require 'theme)
