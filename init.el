@@ -42,6 +42,7 @@
 (require 'tags)
 (require 'projects)
 (require 'spelling)
+(require 'orgmode)
 
 (defun new-frame-setup (frame)
   (if (display-graphic-p frame)
