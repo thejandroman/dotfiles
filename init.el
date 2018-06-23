@@ -44,13 +44,13 @@
 (require 'spelling)
 (require 'orgmode)
 
-(defun new-frame-setup (frame)
-  (if (display-graphic-p frame)
-      (require 'spaceline-all-the-icons)))
-;; Run for already-existing frames
-(mapc 'new-frame-setup (frame-list))
-;; Run when a new frame is created
-(add-hook 'after-make-frame-functions 'new-frame-setup)
+;; (defun new-frame-setup (frame)
+;;   (if (display-graphic-p frame)
+;;       (require 'spaceline-all-the-icons)))
+;; ;; Run for already-existing frames
+;; (mapc 'new-frame-setup (frame-list))
+;; ;; Run when a new frame is created
+;; (add-hook 'after-make-frame-functions 'new-frame-setup)
 
 (add-to-list 'default-frame-alist '(font . "Fira Code"))
 

@@ -380,7 +380,7 @@ the directions of the separator."
 
 ;; (setq mode-line-format '("%e" (:eval (spaceline-ml-main))))
 
-(provide 'spaceline-all-the-icons)
+;; (provide 'spaceline-all-the-icons)
 ;;; spaceline-all-the-icons.el ends here
 ;; Local Variables:
 ;; indent-tabs-mode: nil
