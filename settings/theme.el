@@ -2,6 +2,9 @@
 ;;; Code:
 ;;; Commentary:
 
+(use-package color-theme-sanityinc-tomorrow
+  :ensure t)
+
 (use-package base16-theme
   :ensure t)
 
@@ -15,9 +18,6 @@
   :ensure t)
 
 (use-package sunburn-theme
-  :ensure t)
-
-(use-package color-theme-sanityinc-tomorrow
   :ensure t)
 
 ;; (customize-set-variable 'solarized-termcolors 256)
