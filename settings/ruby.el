@@ -33,6 +33,8 @@
 (add-to-list 'interpreter-mode-alist
              '("shell-ruby" . ruby-mode))
 
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+
 (provide 'ruby)
 
 ;;; ruby.el ends here
