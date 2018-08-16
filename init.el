@@ -52,7 +52,7 @@
 ;; ;; Run when a new frame is created
 ;; (add-hook 'after-make-frame-functions 'new-frame-setup)
 
-(add-to-list 'default-frame-alist '(font . "Fira Code-16"))
+(add-to-list 'default-frame-alist '(font . "Fira Code-14"))
 
 ;; Add languages
 (require 'markdown)
