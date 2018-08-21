@@ -1,0 +1,27 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Customize to your needs...
+alias et='emacsclient -t'
+alias ec='emacsclient -c'
+alias be='bundle exec'
+
+# Allow kill word and moving forward/backword by word to behave like
+# bash (e.g. stop at / chars)
+autoload -U select-word-style
+select-word-style bash
+
+if ! [ -n "$(pgrep gpg-agent)" ]; then eval $(gpg-agent --daemon); fi
+
+eval "$(rbenv init -)"
+eval "$(nodenv init -)"
+eval "$(pyenv init -)"
