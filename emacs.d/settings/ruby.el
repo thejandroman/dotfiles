@@ -33,6 +33,9 @@
 (add-to-list 'interpreter-mode-alist
              '("shell-ruby" . ruby-mode))
 
+;; make web-mode play nice with smartparens
+(setq web-mode-enable-auto-pairing nil)
+
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 
 (provide 'ruby)
