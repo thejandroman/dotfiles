@@ -30,11 +30,15 @@
                       '(javascript-jshint)
                       '(javascript-jscs)
                       '(javascript-eslint)))
+(setq js2-mode-show-parse-errors nil)
+(setq js2-mode-show-strict-warnings nil)
 
 ;; Enable standard
 (flycheck-add-mode 'javascript-standard 'web-mode)
 (flycheck-add-mode 'javascript-standard 'js2-mode)
 (flycheck-add-mode 'javascript-standard 'js-mode)
+
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-jsx-mode))
 
 (provide 'javascript)
 
