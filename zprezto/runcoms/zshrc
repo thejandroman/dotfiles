@@ -15,7 +15,7 @@ alias et='emacsclient -t'
 alias ec='emacsclient -c'
 alias be='bundle exec'
 if $(type bat &> /dev/null); then
-  alias cat='bat'
+  alias cat=$(command -v bat)
 fi
 
 # Allow kill word and moving forward/backword by word to behave like
