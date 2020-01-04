@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+/usr/local/bin/vdirsyncer sync
+/usr/local/bin/khal interactive

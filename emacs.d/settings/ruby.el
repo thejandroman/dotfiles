@@ -29,12 +29,24 @@
 (setq-default flycheck-disabled-checkers
               (append flycheck-disabled-checkers
                       '(ruby-reek)))
+(custom-set-variables
+ '(flycheck-ruby-rubocop-executable "~/.rbenv/shims/rubocop" ))
 
 (add-to-list 'interpreter-mode-alist
              '("shell-ruby" . ruby-mode))
 
 ;; make web-mode play nice with smartparens
-(setq web-mode-enable-auto-pairing nil)
+(defun my-web-mode-hook ()
+  (setq web-mode-enable-auto-pairing nil))
+
+(add-hook 'web-mode-hook  'my-web-mode-hook)
+
+(defun sp-web-mode-is-code-context (id action context)
+  (and (eq action 'insert)
+       (not (or (get-text-property (point) 'part-side)
+                (get-text-property (point) 'block-side)))))
+
+(sp-local-pair 'web-mode "<" nil :when '(sp-web-mode-is-code-context))
 
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 
