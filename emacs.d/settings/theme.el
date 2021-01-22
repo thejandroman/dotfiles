@@ -11,7 +11,7 @@
 (use-package darktooth-theme
   :ensure t)
 
-(use-package color-theme-solarized
+(use-package color-theme-sanityinc-solarized
   :ensure t)
 
 (use-package zenburn-theme
