@@ -18,6 +18,9 @@ zstyle ':prezto:*:*' color 'yes'
 # Add additional directories to load prezto modules from
 # zstyle ':prezto:load' pmodule-dirs $HOME/.zprezto-contrib
 
+# Allow module overrides when pmodule-dirs causes module name collisions
+# zstyle ':prezto:load' pmodule-allow-overrides 'yes'
+
 # Set the Zsh modules to load (man zshmodules).
 # zstyle ':prezto:load' zmodule 'attr' 'stat'
 
@@ -26,19 +29,20 @@ zstyle ':prezto:*:*' color 'yes'
 
 # Set the Prezto modules to load (browse modules).
 # The order matters.
+# zstyle ':prezto:load' pmodule \
+#   'syntax-highlighting' \
 zstyle ':prezto:load' pmodule \
-  'completion' \
-  'directory' \
-  'editor' \
   'emacs' \
   'environment' \
   'git' \
-  'history' \
-  'prompt' \
-  'spectrum' \
-  'syntax-highlighting' \
   'terminal' \
-  'utility'
+  'editor' \
+  'history' \
+  'directory' \
+  'spectrum' \
+  'utility' \
+  'completion' \
+  'prompt'
 
 #
 # Autosuggestions
@@ -73,14 +77,14 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 #
 
 # Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
-zstyle ':prezto:module:git:status:ignore' submodules 'all'
+# zstyle ':prezto:module:git:status:ignore' submodules 'all'
 
 #
 # GNU Utility
 #
 
 # Set the command prefix on non-GNU systems.
-zstyle ':prezto:module:gnu-utility' prefix 'g'
+# zstyle ':prezto:module:gnu-utility' prefix 'g'
 
 #
 # History Substring Search
@@ -194,7 +198,7 @@ zstyle ':prezto:module:prompt' theme 'jandro'
 #
 
 # Auto set the tab and window titles.
-zstyle ':prezto:module:terminal' auto-title 'yes'
+# zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Set the window title format.
 # zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
@@ -210,7 +214,7 @@ zstyle ':prezto:module:terminal' auto-title 'yes'
 #
 
 # Auto start a session when Zsh is launched in a local terminal.
-# zstyle ':prezto:module:tmux:auto-start' local 'yes'
+zstyle ':prezto:module:tmux:auto-start' local 'yes'
 
 # Auto start a session when Zsh is launched in a SSH connection.
 # zstyle ':prezto:module:tmux:auto-start' remote 'yes'
@@ -232,5 +236,5 @@ zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Allow kill word and moving forward/backword by word to behave like
 # bash (e.g. stop at / chars)
-autoload -U select-word-style
-select-word-style bash
+# autoload -U select-word-style
+# select-word-style bash
