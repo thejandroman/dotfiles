@@ -11,18 +11,22 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-export MOZ_ENABLE_WAYLAND=1
+# export MOZ_ENABLE_WAYLAND=1
 
-alias drop-caches='sudo paccache -rk3; yay -Sc --aur --noconfirm'
-alias update-all='export TMPFILE="$(mktemp)"; \
-    sudo true; \
-    rate-mirrors --save=$TMPFILE arch --max-delay=21600 \
-      && sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist-backup \
-      && sudo mv $TMPFILE /etc/pacman.d/mirrorlist \
-      && drop-caches \
-      && yay -Syyu --noconfirm'
-alias emacs='TERM=xterm-256color emacs'
-alias dolphin='QT_QPA_PLATFORMTHEME=gtk3 QT_STYLE_OVERRIDE=Fusion dolphin'
+# alias drop-caches='sudo paccache -rk3; yay -Sc --aur --noconfirm'
+# alias update-all='export TMPFILE="$(mktemp)"; \
+#     sudo true; \
+#     rate-mirrors --save=$TMPFILE arch --max-delay=21600 \
+#       && sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist-backup \
+#       && sudo mv $TMPFILE /etc/pacman.d/mirrorlist \
+#       && drop-caches \
+#       && yay -Syyu --noconfirm'
+# alias emacs='TERM=xterm-256color emacs'
+# alias dolphin='QT_QPA_PLATFORMTHEME=gtk3 QT_STYLE_OVERRIDE=Fusion dolphin'
+alias ec="emacsclient -c"
+alias et="emacsclient -t"
+alias be="bundle exec"
+export EDITOR="emacsclient -t"
 
 autoload -U select-word-style
 select-word-style bash
@@ -96,3 +100,8 @@ RPS1='$(git_prompt_string)'
 
 NEWLINE=$'\n'
 PS1="%{$fg[magenta]%}%n%{$fg[white]%}@%{$fg[yellow]%}%m%{$fg[white]%}:%{$fg[green]%}%~%{$fg[blue]%}>%{$reset_color%} "
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - zsh)"
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
