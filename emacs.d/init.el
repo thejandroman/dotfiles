@@ -2,7 +2,7 @@
 ;;; Code:
 ;;; Commentary:
 
-(package-initialize)
+;; (package-initialize)
 
 ;; Set up load path
 (defvar settings-dir)
@@ -52,7 +52,7 @@
 ;; ;; Run when a new frame is created
 ;; (add-hook 'after-make-frame-functions 'new-frame-setup)
 
-(add-to-list 'default-frame-alist '(font . "Fira Code-12"))
+(add-to-list 'default-frame-alist '(font . "Fira Code-10"))
 
 ;; Add languages
 (require 'markdown)
