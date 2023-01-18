@@ -11,7 +11,7 @@
   (defvar neo-theme)
   (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
   (defvar neo-vc-integration)
-  (setq neo-vc-integration (quote (face)))
+  (setq neo-vc-integration '(char))
   )
 
 (use-package projectile
