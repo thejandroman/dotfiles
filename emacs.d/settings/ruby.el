@@ -6,7 +6,8 @@
 (defvar rbenv-paths)
 (setq rbenv-paths
       '("/usr/local/rbenv"
-        "/usr/local/bin/rbenv"))
+        "/usr/local/bin/rbenv"
+        "/home/jandro/.rbenv/bin/rbenv"))
 
 ;; Use the first rbenv path that responds as executable
 (defvar rbenv-path)
