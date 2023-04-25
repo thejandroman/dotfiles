@@ -41,7 +41,7 @@
 (require 'programming)
 (require 'tags)
 (require 'projects)
-(require 'spelling)
+;; (require 'spelling)
 (require 'orgmode)
 
 ;; (defun new-frame-setup (frame)
