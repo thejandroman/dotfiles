@@ -57,6 +57,9 @@ output * bg ~/Pictures/bing-wallpapers/today.jpg fill
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
+input * {
+    xkb_options 'ctrl:nocaps'
+}
 
 ### Key bindings
 #
@@ -107,6 +110,11 @@ output * bg ~/Pictures/bing-wallpapers/today.jpg fill
     bindsym $mod+Shift+Down move down
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
+
+    # alt+tab style modifier
+    bindsym $mod+tab focus right
+    bindsym $mod+Shift+tab focus left
+
 #
 # Workspaces:
 #
